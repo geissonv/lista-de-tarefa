@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 
 const Todo = ({todo, removeTodo, completeTodo}) => {
   return (
@@ -8,8 +9,8 @@ const Todo = ({todo, removeTodo, completeTodo}) => {
             <p className='category'>({todo.category})</p>
         </div>
         <div>
-            <button className='complete' onClick={() => completeTodo(todo.id)}> complete </button>
-            <button className='remove' onClick={() => removeTodo(todo.id)}> x </button>
+            <button className='complete' onClick={() => completeTodo(todo.id)}><AiOutlineCheck /></button>
+            <button className='remove' onClick={() => removeTodo(todo.id)}><AiOutlineClose /></button>
         </div>
   </div>
   )

@@ -1,3 +1,5 @@
+import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
+
 export const Filter = ({ filter, setFilter, setSort }) => {
   return (
     <div className="filter">
@@ -13,8 +15,8 @@ export const Filter = ({ filter, setFilter, setSort }) => {
             </div>
             <div>
                 <p>Ordem alfabética:</p>
-                <button onClick={() => setSort('Asc') }>Asc</button>
-                <button onClick={() => setSort('Desc')}>Desc</button>
+                <button onClick={() => setSort('Asc') }><AiFillCaretUp /></button>
+                <button onClick={() => setSort('Desc')}><AiFillCaretDown /></button>
             </div>
 
         </div>
